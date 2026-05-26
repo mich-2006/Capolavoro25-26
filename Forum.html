@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Il mio capolavoro</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="Forum.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">MICHELLE</a>
+        <div class="ms-auto">
+            <a href="Index.html" class="nav-link d-inline-block me-3">Home Page</a>
+            <a href="Oltre la tecnica.html" class="nav-link d-inline-block">Oltre il codice</a>
+        </div>
+    </div>
+</nav>
+<header class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4">Lascia un’Impronta</h1>
+        <p class="lead">In un mondo dominato da feedback istantanei e asettici, questo spazio è dedicato alla tua voce. <br>
+        <span class="text-muted italic">Condividi la tua visione sul contrasto tra inchiostro e algoritmi.</span></p>
+    </div>
+</header>
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="custom-card p-4 p-md-5">
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="name" class="form-label custom-label">NOME</label><br>
+                        <input type="text" class="form-control custom-input" id="name" placeholder="Esempio: Lettore2025" required>
+                    </div><br>
+                    <div class="mb-4">
+                        <label class="form-label custom-label">TIPO DI VISIONE</label><br>
+                        <div class="form-check custom-radio">
+                            <input class="form-check-input" type="radio" name="visione" id="v1" value="umanista">
+                            <label class="form-check-label" for="v1">Umanista (Lentezza dell'inchiostro)</label><br>
+                        </div>
+                        <div class="form-check custom-radio">
+                            <input class="form-check-input" type="radio" name="visione" id="v2" value="tecnologica">
+                            <label class="form-check-label" for="v2">Tecnologica (Efficienza del bit)</label><br>
+                        </div>
+                        <div class="form-check custom-radio">
+                            <input class="form-check-input" type="radio" name="visione" id="v3" value="ibrida" checked>
+                            <label class="form-check-label" for="v3">Ibrida (Equilibrio)</label>
+                        </div>
+                    </div>
+					<br>
+                    <div class="mb-4">
+                        <label for="message" class="form-label custom-label">IL TUO MESSAGGIO</label><br>
+                        <textarea class="form-control custom-input" id="message" rows="5" placeholder="Cosa ne pensi del progetto?"></textarea>
+                    </div>
+
+                    <br><button type="submit" class="btn btn-dark w-100 btn-submit">INVIA IL TUO PENSIERO</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0">
+            <h3 class="mb-4 section-title">Riflessioni dalla Community</h3>
+            <div class="comment-item mb-4">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="user-avatar">MV</span>
+                    <span class="user-name">Marco V.</span>
+                    <span class="badge tag-umanista ms-auto">UMANISTA</span>
+                </div>
+                <p class="comment-text">"Il grafico nella prima pagina è d'impatto. Mi ha fatto riflettere su quanto tempo ho smesso di scrivere a mano. Bellissimo il contrasto cromatico!"</p>
+            </div>
+            <div class="comment-item mb-4">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="user-avatar">TE</span>
+                    <span class="user-name">TechEnthusiast</span>
+                    <span class="badge tag-tech ms-auto">TECNOLOGICA</span>
+                </div>
+                <p class="comment-text">"Ottima l'analisi del 2025. L'efficienza non deve spaventare, ma essere vista come un nuovo strumento di espressione."</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

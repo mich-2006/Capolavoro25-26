@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&family=Outfit:wght@600;800&display=swap');
+:root {
+    --bg: #fdfdfd;
+    --accent: #0062ff;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --card-bg: #ffffff;
+    --border-soft: #f1f5f9;
+}
+body {
+    background-color: var(--bg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.7;
+    padding-bottom: 80px;
+}
+nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-soft);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-brand {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: var(--text-dark) !important;
+}
+.nav-link:hover {
+    background: rgba(0, 98, 255, 0.05);
+    color: var(--accent) !important;
+}
+.hero-section {
+    padding: 100px 0 60px;
+    background: radial-gradient(circle at top right, rgba(0, 98, 255, 0.03), transparent);
+}
+.display-4 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: var(--accent);
+}
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    color: var(--text-dark);
+    display: inline-block;
+    border-bottom: 3px solid var(--accent);
+}
+p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ul:last-of-type {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+ul:last-of-type li {
+    background: var(--card-bg);
+    border: 1px solid var(--border-soft);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+ul:last-of-type li:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+ul:last-of-type li strong {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+h2 + p:last-of-type {
+    background: var(--text-dark);
+    color: #f1f5f9;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: left;
+    max-width: 1100px;
+    margin-top: 20px;
+}
+h2 + p:last-of-type strong {
+    color: var(--accent);
+}
+body > * {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
